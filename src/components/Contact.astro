@@ -1,0 +1,25 @@
+<main class="my-20 border-b-2 border-white pt-32 pb-44 " id="contact">
+    <h1 class="text-5xl text-center mb-16">Contact Me</h1>
+    <form action="">
+        <div class="grid grid-cols-6 gap-4 mb-4 max-w-[900px] mx-auto gap-x-14">
+            <input type="text" name="name" placeholder="Your Name" class="w-full col-span-3 p-2 mb-4  outline-none border-b-2 border-white ">
+            <input type="text" name="lastname" placeholder="Your Last Name" class="w-full col-span-3 p-2 mb-4 outline-none border-b-2 border-white  ">
+            <input type="email" name="email" placeholder="Your Email" class="w-full col-span-3 p-2 mb-4 outline-none border-b-2 border-white  ">
+            <input type="text" name="subject" placeholder="Subject" class="w-full col-span-3 p-2 mb-4 outline-none border-b-2 border-white  ">
+            
+            <textarea name="message"  placeholder="Your Message" class="w-full resize-none   col-span-4 p-2 mb-4 outline-none border-b-2 border-white  "></textarea>
+            <div class="flex items-center justify-center col-span-2">
+                <button class=" hover:text-primary border-2 border-white rounded-2xl px-16 py-4 hover:bg-white cursor-pointer duration-300 ease-in-out">Enviar</button>
+            </div>
+        </div>
+    </form>
+</main>
+
+<script>
+    const form = document.querySelector('form');
+    form?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Form submitted successfully!');
+        form.reset();
+    });
+</script>

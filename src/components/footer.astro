@@ -1,0 +1,40 @@
+---
+import ArrowUp from "../icons/arrowUp.astro";
+import Facebook from "../icons/facebook.astro";
+import Instagram from "../icons/instagram.astro";
+import Whattsapp from "../icons/whattsapp.astro";
+import Linkedin from "../icons/linkedin.astro";
+import Github from "../icons/github.astro";
+---
+
+<footer class="my-10 px-12 flex flex-col gap-y-10 text-xl">
+    <div class="flex justify-between">
+        <a href="#portfolio" class="hover:text-secondary duration-300 ease-in-out" >Projects</a>
+        <div class="flex gap-x-4 items-center">
+            <a href="https://www.facebook.com/J0seMorocho/" target="_blank"><Facebook/></a>
+            <a href="https://www.instagram.com/jos.e.lm" target="_blank"><Instagram/></a>
+            <a href="https://www.linkedin.com/in/joseback/" target="_blank"><Linkedin/></a>
+            <a href="https://github.com/JW0FSSS" target="_blank"><Github/></a>
+            <a href="https://wa.me/946626935" target="_blank"><Whattsapp/></a>
+        </div>
+    </div>
+    <div class="flex justify-between">
+        <a href="mailto:dstry77@gmail.com" target="_blank" class="hover:text-secondary duration-300 ease-in-out">dstry77@gmail.com</a>
+        <div class="flex gap-x-3 items-center">
+            <p><ArrowUp/></p>
+            <p id="begin" class="cursor-pointer hover:text-secondary duration-300 ease-in-out">volver arriba</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+    const begin=document.getElementById("begin");
+
+    begin?.addEventListener("click", ()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
